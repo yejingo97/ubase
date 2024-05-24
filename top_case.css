@@ -14,6 +14,9 @@
         display: block;
     }
 }
+body {
+    word-break:keep-all; 
+}
 img {
     border: 0 none;
 }
@@ -119,9 +122,34 @@ img {
     height: 38rem;
     background: url("https://yejingo97.github.io/ubase/top_case04.jpg") no-repeat;
     background-size: contain;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    /* justify-content: center; */
+    justify-items: center;
+    align-content: space-between;
+    box-sizing: border-box;
+    padding: 2em 2.5% 4em 2.5%; /*위 오른쪽 아래 왼쪽*/
 }
-#top_case05_wrap>p:first-child{
-    font-size: 1.50em;
-    text-align: end;
-    padding: 2.50rem 2.50rem;
+#top_case05_logo{
+    width: 14.38em;
+    height: 6.25em;
+    background: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 0px #86868698;
+    justify-self: end;
+}
+#top_case05_logo>p{
+    line-height: 3.2em;
+}
+#top_case05_txt{
+    width: 100%;
+    height: 12em;
+    background: white;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px 2px 0px #86868698;
+    padding: 0rem 1.5rem;
+    box-sizing: border-box;
+    display: flex; justify-content: center; align-items: center;
 }
