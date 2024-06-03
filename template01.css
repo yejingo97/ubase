@@ -1,0 +1,250 @@
+/* basic css */
+.imgbox{
+    display:grid; 
+    grid-template-rows:repeat(3,max-content); 
+    justify-items:center; 
+}
+.imgbox img{
+    max-width:100%; 
+}
+.content_box{
+    box-sizing:border-box; 
+    width:100%; 
+    margin-top:-2.5em; 
+    background:#101010; 
+}
+.content_box * {
+    margin:0; 
+    padding:0; 
+}
+/* basic_end */
+
+.visual_logo {
+    font-size: 2.5rem;
+    line-height: 1.5em;
+
+}
+
+.visual_title {
+    font-size: 4rem;
+    line-height: 1.5em;
+}
+
+#basic01_wrap {
+    display: grid;
+    grid-template-rows: repeat(5, max-content);
+    row-gap: 2rem;
+    border-top: none;
+    margin-top: -0.1em;
+    justify-items: center;
+    box-sizing: border-box;
+}
+
+#visual_wrap {
+    width: 100%;
+    height: 31.25rem;
+    background: #101010;
+    /* background: url("/basic01_img.png") no-repeat center; */
+    background-size: contain;
+    padding: 11rem 3.13rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    row-gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+#visual_wrap>p {
+    color: #ffffff;
+    font-family: "JalnanGothic" !important;
+    text-align: center;
+}
+
+#company_intro {
+    width: 100%;
+    height: 13rem;
+    font-family: "NanumSquare", sans-serif !important;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    color: #101010;
+    padding-top: 3rem;
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+}
+
+#recruitment_wrap {
+    width: 50rem;
+    height: 53.75rem;
+}
+#recruitment_title {
+    width: 100%;
+    height: 3rem;
+    font-size: 2.06rem;
+    font-family: "NanumSquare", sans-serif !important;
+    font-weight: 800;
+    color: #101010;
+    line-height: 1.5em;
+    margin-bottom: 1rem;
+}
+#recruitment_list {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    color: #101010;
+}
+
+#recruitment_list>li {
+    width: 100%;
+    border-top: solid 1px #101010;
+    box-sizing: border-box;
+    padding-top: 1.69em;
+    padding-bottom: 1.69em;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.recruitment_left {
+    width: 100%;
+}
+
+.recruitment_title {
+    font-family: "NanumSquare", sans-serif !important;
+    font-weight: 800;
+    font-size: 1.88rem;
+    line-height: 1.5em;
+}
+
+.recruitment_txt {
+    font-family: "NanumSquare", sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+.recruitment_right {
+    width: 100%;
+}
+
+.recruitment_right_list {
+    margin-bottom: 2em;
+}
+
+.recruitment_right_list>li {
+    font-family: "NanumSquare", sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+.recruitment_right_list>li:first-child {
+    font-weight: 800;
+    margin-bottom: 0.5em;
+}
+#welfare_wrap {
+    width: 100%;
+    height: 48.75rem;
+    background: #141414;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+#welfare{
+    width: 50rem;
+    height: 37.88rem;
+}
+#welfare_title{
+    font-size: 2.06rem;
+    line-height: 1em;
+    font-family: "NanumSquare", sans-serif !important;
+    font-weight: 800;
+    color: #ffffff;
+    position: relative;
+}
+#welfare_title::after{
+    content: "";
+    display: block;
+    width: 38.88rem;
+    height: 1rem;
+    background: none;
+    border-top: dashed 2px #ffffff;
+    position: absolute;
+    right: 0px;
+    top: 1rem
+}
+#welfare_list{
+    width: 100%;
+    height: 31.50rem;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    margin-top: 3.13rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+#welfare_list>li{
+    border: solid 0.5px #fff;
+    text-align: center;
+    color: #fff;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+#welfare_list>li>p{
+    font-family: "NanumSquare", sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+#schedule_wrap{
+    width: 100%;
+    height: 25.50rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+#schedule{
+    width: 50rem;
+    height: 14.56rem;
+}
+#schedule_title{
+    font-size: 2.06rem;
+    line-height: 1em;
+    font-family: "NanumSquare", sans-serif !important;
+    font-weight: 800;
+    color: #101010;
+    position: relative;
+}
+#schedule_title::after{
+    content: "";
+    display: block;
+    width: 38.88rem;
+    height: 1rem;
+    background: none;
+    border-top: dashed 2px #101010;
+    position: absolute;
+    right: 0px;
+    top: 1rem
+}
+#schedule_list{
+    width: 100%;
+    height: 8.50rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 3.13rem;
+    column-gap: 1rem;
+}
+#schedule_list>li{
+    text-align: center;
+    color: #fff;
+    background: #414141;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+#schedule_list>li>p{
+    font-family: "NanumSquare", sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
