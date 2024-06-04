@@ -1,25 +1,27 @@
 <style>
-
     @media only screen and (max-width: 961px) {
-    #view_contents_wrap .titleType .artTplDetail{
-        display:block; 
+        #view_contents_wrap .titleType .artTplDetail {
+            display: block;
+        }
     }
-}
-    #step_wrap{
+
+    #step_wrap {
         width: 90%;
         height: 250px;
         margin: 0px auto;
         padding-top: 1em;
         box-sizing: border-box;
         display: flex;
-        flex-flow:row wrap;
+        flex-flow: row wrap;
         column-gap: 1em;
     }
-    #step_intro_txt{
+
+    #step_intro_txt {
         font-size: 1.25rem;
         color: #dc0202;
     }
-    #step_list{
+
+    #step_list {
         width: 100%;
         height: 8.13rem;
         display: flex;
@@ -27,7 +29,8 @@
         justify-content: space-between;
         column-gap: 1em;
     }
-    #step_list>li{
+
+    #step_list>li {
         width: 100%;
         background: #E03B3B;
         border-radius: 10px;
@@ -36,14 +39,16 @@
         flex-direction: column;
 
     }
-    .step_num{
+
+    .step_num {
         width: 100%;
         /* height: 30px; */
         text-align: center;
         /* margin-top:35px; */
         font-size: 1rem;
     }
-    .step_title{
+
+    .step_title {
         width: 100%;
         /* height: 30px; */
         text-align: center;
@@ -51,12 +56,65 @@
         font-weight: 800;
         font-size: 1.25rem;
     }
-    #step_list>li:last-child{
+
+    #step_list>li:last-child {
         background: #C93535;
     }
-    #step_bottom_txt{
+
+    #step_bottom_txt {
         font-size: 1rem;
         /* float:left; */
+    }
+
+    #step_box {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 1.5em;
+        justify-content: space-between;
+    }
+
+    #step_box li.step_graph {
+        width: 7.5em;
+        height: 7.5em;
+        position: relative;
+        border-radius: 50%;
+        background: #e7e7e7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #step_box li.step_graph:before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: #004ea2;
+        overflow: hidden;
+    }
+
+    #step_box li.step_graph:first-of-type:before {
+        clip-path: polygon(50% 0%, 50% 50%, 82% 100%, 100% 100%, 100% 0%);
+    }
+
+    #step_box li.step_graph:nth-of-type(2):before {
+        clip-path: polygon(50% 0%, 50% 50%, 18% 100%, 100% 100%, 100% 0%);
+    }
+
+    #step_box li.step_graph b {
+        width: 6em;
+        height: 6em;
+        border-radius: 50%;
+        background: #fff;
+        color: #000;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
 </style>
 
@@ -84,5 +142,23 @@
             <p class="step_title">최종합격</p>
         </li>
     </ul>
-     <p id="step_bottom_txt">※ 신입의 경우 인적성검사를 진행하며, 경력사원의 경우 인성검사를 진행합니다.</p>
+    <p id="step_bottom_txt">※ 신입의 경우 인적성검사를 진행하며, 경력사원의 경우 인성검사를 진행합니다.</p>
+</div>
+
+<div class="detStep detStep_16 expose-both ct mb_50">
+    <div class="detStep_content" style="margin-bottom: 1.5em">
+        <ul id="step_box">
+            <li class="step_graph">
+                <b>서류심사</b>
+            </li>
+            <li class="step_graph">
+                <b>면접</b>
+            </li>
+            <li class="step_graph">
+                <b>최종합격</b>
+            </li>
+        </ul>
+    </div>
+    <div class="caution" style="line-height: 1.5em; background-color: #ededed; color: #000; border-radius: 10px">* 면접일정은
+        추후 통보됩니다.</div>
 </div>
