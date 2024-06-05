@@ -37,26 +37,22 @@
     border-top: none;
     margin-top: -0.1em;
     justify-items: center;
-    box-sizing: border-box;
 }
 
 #visual_wrap {
     width: 100%;
     height: 31.25rem;
-    background: #101010;
-    /* background: url("/basic01_img.png") no-repeat center; */
-    background-size: contain;
-    padding: 11rem 3.13rem;
-    box-sizing: border-box;
+    /* padding: 11rem 3.13rem; */
     display: grid;
     grid-template-rows: repeat(2, max-content);
     row-gap: 1.5em;
     justify-content: center;
-    align-items: center;
+    border-bottom: solid 0.5em #101010;
+    align-content: center;
 }
 
 #visual_wrap>p {
-    color: #ffffff;
+    color: #101010;
     font-family: "JalnanGothic" !important;
     text-align: center;
 }
@@ -72,7 +68,6 @@
     align-items: center;
     color: #101010;
     padding-top: 3rem;
-    box-sizing: border-box;
     padding-bottom: 3rem;
 }
 
@@ -80,12 +75,19 @@
     width: 50rem;
     height: 53.75rem;
 }
-#recruitment_title {
+/* #recruitment_title {
     width: 100%;
     height: 3rem;
     font-size: 2.06rem;
     font-family: "NanumSquare", sans-serif !important;
     font-weight: 800;
+    color: #101010;
+    line-height: 1.5em;
+    margin-bottom: 1rem;
+} */
+#recruitment_wrap .inner_title{
+    width: 100%;
+    height: 3rem;
     color: #101010;
     line-height: 1.5em;
     margin-bottom: 1rem;
@@ -100,11 +102,11 @@
 #recruitment_list>li {
     width: 100%;
     border-top: solid 1px #101010;
-    box-sizing: border-box;
     padding-top: 1.69em;
     padding-bottom: 1.69em;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    column-gap: 3em;
 }
 
 .recruitment_left {
@@ -154,7 +156,7 @@
     width: 50rem;
     height: 37.88rem;
 }
-#welfare_title{
+.inner_title{
     font-size: 2.06rem;
     line-height: 1em;
     font-family: "NanumSquare", sans-serif !important;
@@ -162,16 +164,22 @@
     color: #ffffff;
     position: relative;
 }
-#welfare_title::after{
+.inner_title::after{
     content: "";
     display: block;
     width: 38.88rem;
     height: 1rem;
     background: none;
-    border-top: dashed 2px #ffffff;
+    border-top: solid 2px #ffffff;
     position: absolute;
     right: 0px;
     top: 1rem
+}
+#schedule .inner_title{
+    color: #101010;
+}
+#schedule .inner_title::after{
+    border-top: solid 2px #101010;
 }
 #welfare_list{
     width: 100%;
@@ -206,25 +214,6 @@
 #schedule{
     width: 50rem;
     height: 14.56rem;
-}
-#schedule_title{
-    font-size: 2.06rem;
-    line-height: 1em;
-    font-family: "NanumSquare", sans-serif !important;
-    font-weight: 800;
-    color: #101010;
-    position: relative;
-}
-#schedule_title::after{
-    content: "";
-    display: block;
-    width: 38.88rem;
-    height: 1rem;
-    background: none;
-    border-top: dashed 2px #101010;
-    position: absolute;
-    right: 0px;
-    top: 1rem
 }
 #schedule_list{
     width: 100%;
