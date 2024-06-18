@@ -1,7 +1,7 @@
 @import url(https://jkamhub.github.io/css/jk_style.css);
 
 /* basic css */
-.imgbox{
+/* .imgbox{
     display:grid; 
     grid-template-rows:repeat(3,max-content); 
     justify-items:center; 
@@ -18,7 +18,7 @@
 .content_box * {
     margin:0; 
     padding:0; 
-}
+} */
 /* basic_end */
 
 .visual_logo {
