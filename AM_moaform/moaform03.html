@@ -1,203 +1,202 @@
-<div id="ifr_gi_detail"><!---★알바몬 상세모집공고 폼으로 알바몬 이외 사이트에 복사 사용을 금합니다★-->
-    <style type="text/css">
-        /* a1 */
-        .monform_a1 {
-            max-width: 700px;
-            min-width: 450px;
-            margin: 0 auto;
-            padding-bottom: 30px;
-            font: normal 1rem Pretendard Variable, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, arial, sans-serif;
-            line-height: 1.05em;
-            color: #494949;
-        }
+<!---★알바몬 상세모집공고 폼으로 알바몬 이외 사이트에 복사 사용을 금합니다★-->
+<style type="text/css">
+    /* a1 */
+    .monform_a1 {
+        max-width: 700px;
+        min-width: 450px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        font: normal 1rem Pretendard Variable, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, arial, sans-serif;
+        line-height: 1.05em;
+        color: #494949;
+    }
 
-        .monform_a1 .logo {
-            text-align: right;
-            padding: 10px 0 8px 0;
-            border-top: 3px solid #e9e9e9;
-            margin: 0;
-        }
+    .monform_a1 .logo {
+        text-align: right;
+        padding: 10px 0 8px 0;
+        border-top: 3px solid #e9e9e9;
+        margin: 0;
+    }
 
-        .monform_a1 .logo img {
-            width: 90px;
-        }
+    .monform_a1 .logo img {
+        width: 90px;
+    }
 
-        .monform_a1 .topimg {
-            max-width: 100%;
-            vertical-align: top;
-            padding: 0;
-            margin: 0;
-        }
+    .monform_a1 .topimg {
+        max-width: 100%;
+        vertical-align: top;
+        padding: 0;
+        margin: 0;
+    }
 
-        .monform_a1 h1 {
-            font: normal 1.9em Pretendard Variable, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, arial, sans-serif;
-            padding: 15px;
-            line-height: 1.2em;
-            margin: 0;
-            background: #54679B;
-            color: #fff;
-        }
+    .monform_a1 h1 {
+        font: normal 1.9em Pretendard Variable, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, arial, sans-serif;
+        padding: 15px;
+        line-height: 1.2em;
+        margin: 0;
+        background: #54679B;
+        color: #fff;
+    }
 
-        .monform_a1 h2 {
-            clear: both;
-            font-size: 1.4em;
-            letter-spacing: -2px;
-            padding: 30px 0 10px 0;
-            margin: 10px 0 0 0;
-            color: #000;
-        }
+    .monform_a1 h2 {
+        clear: both;
+        font-size: 1.4em;
+        letter-spacing: -2px;
+        padding: 30px 0 10px 0;
+        margin: 10px 0 0 0;
+        color: #000;
+    }
 
-        .monform_a1 h2 img {
-            padding-right: 3px;
-        }
+    .monform_a1 h2 img {
+        padding-right: 3px;
+    }
 
-        .monform_a1 h3 {
-            color: #000;
-        }
+    .monform_a1 h3 {
+        color: #000;
+    }
 
-        .monform_a1 p.txt {
-            width: 100%;
-            line-height: 1.5em;
-            margin-top: 0;
-            padding-left: 5px;
-        }
+    .monform_a1 p.txt {
+        width: 100%;
+        line-height: 1.5em;
+        margin-top: 0;
+        padding-left: 5px;
+    }
 
-        .monform_a1 ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
+    .monform_a1 ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-        .monform_a1 li {
-            margin: 0 0 6px 0;
-            padding: 0 0 0 15px;
-            background: url(https://img.albamon.kr/etc/monform_v3/common/bul_st.png) no-repeat 2px 4px;
-            line-height: 1.8em;
-            list-style: none;
-        }
+    .monform_a1 li {
+        margin: 0 0 6px 0;
+        padding: 0 0 0 15px;
+        background: url(https://img.albamon.kr/etc/monform_v3/common/bul_st.png) no-repeat 2px 4px;
+        line-height: 1.8em;
+        list-style: none;
+    }
 
-        .monform_a1 .step li {
-            float: left;
-            width: 86px;
-            height: 80px;
-            padding: 35px 0 0 10px;
-            text-align: center;
-            font-size: 1.1em;
-            text-align: center;
-        }
+    .monform_a1 .step li {
+        float: left;
+        width: 86px;
+        height: 80px;
+        padding: 35px 0 0 10px;
+        text-align: center;
+        font-size: 1.1em;
+        text-align: center;
+    }
 
-        .monform_a1 table {
-            width: 100%;
-        }
+    .monform_a1 table {
+        width: 100%;
+    }
 
-        .monform_a1 table,
-        .monform_a1 tr,
-        .monform_a1 td {
-            padding: 0.2em;
-            text-align: center;
-            border-collapse: collapse;
-            font: normal 0.97em Pretendard Variable, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, arial, sans-serif;
-            letter-spacing: -1px;
-            line-height: 1.6em;
-        }
+    .monform_a1 table,
+    .monform_a1 tr,
+    .monform_a1 td {
+        padding: 0.2em;
+        text-align: center;
+        border-collapse: collapse;
+        font: normal 0.97em Pretendard Variable, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, arial, sans-serif;
+        letter-spacing: -1px;
+        line-height: 1.6em;
+    }
 
-        .monform_a1 thead th {
-            background: #fffbf1;
-            color: #494949;
-            border-top: 2px solid #54679B;
-            border-bottom: 2px solid #54679B;
-            padding: 5px 0 7px 0;
-            font-weight: bold;
-            border-right: 1px solid #d3d3d3;
-        }
+    .monform_a1 thead th {
+        background: #fffbf1;
+        color: #494949;
+        border-top: 2px solid #54679B;
+        border-bottom: 2px solid #54679B;
+        padding: 5px 0 7px 0;
+        font-weight: bold;
+        border-right: 1px solid #d3d3d3;
+    }
 
-        .monform_a1 tbody td {
-            border-bottom: 1px solid #d3d3d3;
-            border-right: 1px solid #d3d3d3;
-            padding: 10px 0;
-            background: #FFF;
-        }
+    .monform_a1 tbody td {
+        border-bottom: 1px solid #d3d3d3;
+        border-right: 1px solid #d3d3d3;
+        padding: 10px 0;
+        background: #FFF;
+    }
 
-        .monform_a1 thead .end,
-        .monform_a1 tbody .end {
-            border-right: 0 none;
-        }
+    .monform_a1 thead .end,
+    .monform_a1 tbody .end {
+        border-right: 0 none;
+    }
 
-        .monform_a1 a {
-            text-decoration: underline;
-            font-family: Pretendard Variable, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, arial, sans-serif;
-        }
+    .monform_a1 a {
+        text-decoration: underline;
+        font-family: Pretendard Variable, -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, arial, sans-serif;
+    }
 
-        .monform_a1 .btn {
-            text-align: center;
-            margin: 30px auto 50px auto;
-            padding: 10px;
-        }
+    .monform_a1 .btn {
+        text-align: center;
+        margin: 30px auto 50px auto;
+        padding: 10px;
+    }
 
-        .monform_a1 .btn img {
-            vertical-align: middle;
-            margin-right: 5px;
-        }
+    .monform_a1 .btn img {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
 
-        .monform_a1 img {
-            border: none;
-        }
-    </style> <!-- 상세모집요강 내용 시작-->
-    <div class="monform_a1">
-        <p class="logo"><img src="https://img.albamon.kr/etc/monform_v3/common/bi_albamon.png" alt="알바몬"></p>
-        <div class="topimg"><img src="https://contents.albamon.kr/monimg/corp/detail/temp_type_visual_29_1.png"
-                style="width:100%"> </div>
-        <h1 style="text-align:center;">[진천롯데] 야간택배 최대 21만이상가능/<br>상, 하차/당일지급 알바 및 직원</h1> <!--기업소개--> <!-- 모집부문-->
-        <h2><span style="background:#54679B; color:#fff; padding:7px 30px;">모집부문</span></h2>
-        <div style="border:3px solid #54679B; margin-bottom:20px; margin-top:-20px; padding:35px 20px 25px;">
-            <table>
-                <thead>
-                    <tr>
-                        <th style="background:#54679B; color:#fff;">모집부문</th>
-                        <th class="end">담당업무 및 자격요건</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>단순 상/하차 업무</strong></td>
-                        <td class="end right" style="text-align:left; padding-left:10px;">성별무관(미성년자 불가)<br> - 신입/경력에
-                            상관없이 모집합니다</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div> <!-- 지원자격-->
-        <h2><span style="background:#54679B; color:#fff; padding:7px 30px;">근무조건 </span></h2>
-        <div style="border:3px solid #54679B; margin-bottom:20px; margin-top:-20px; padding:35px 20px 25px;">
-            <p class="topimg"><img
-                    src="https://file.albamon.com/albamon/admin/GuinHtmlUpload/ImageView?fn=2024/04/img/jcyfrz02104435.jpg">
-            </p>
-        </div> <!-- 지원자격-->
-        <h2><span style="background:#54679B; color:#fff; padding:7px 30px;">지원조건</span></h2>
-        <div style="border:3px solid #54679B; margin-bottom:20px; margin-top:-20px; padding:35px 20px 25px;">
-            <ul>
-                <li>신분증(주민등록증 또는 면허증) 꼭 지참</li>
-                <li>반바지, 레깅스, 슬리퍼, 크록스 착용금지 </li>
-                <li>건강상 문제 없는 분(혈압 150이상, 맥박 110이상, 당뇨 등) </li>
-                <li>위 사항에 결격사유로 인해 현장에서 귀가조치 될 경우 자비로 귀가 조치. <br>꼭 준수 바랍니다</li>
-            </ul>
-        </div> <!--접수기간 및 방법-->
-        <h2><span style="background:#54679B; color:#fff; padding:7px 30px;">접수방법</span></h2>
-        <div style="border:3px solid #54679B; margin-bottom:20px; margin-top:-20px; padding:35px 20px 25px;">
-            <ul>
-                <li>온라인지원, 간편문자지원, 전화연락</li>
-                <li> <span style="color:blue; font-weight:600; letter-spacing:0px;">담당자 / <span
-                            style="letter-spacing:0px;">010-7403-8288</span></span></li>
-                <li> 전화 / 문자지원</li>
-                <li> 문자 지원시<br> [성함/나이/거주지/동종업계 경험 유, 무] </li>
-                <li> "전화 문의 시 '알바몬에서 채용정보 보고 전화 드렸습니다.' 라고 하시면 <br><span style="color:#fff">"</span>빠른 문의가 가능합니다."</li>
-            </ul>
-        </div> <!--면접 및 교육일정-->
-        <h2><span style="background:#54679B; color:#fff; padding:7px 30px;">담당자 정보</span></h2>
-        <div style="border:3px solid #54679B; margin-bottom:20px; margin-top:-20px; padding:35px 20px 25px;">
-            <ul>
-                <li>담당자명 : 김태진</li>
-                <li> 전화번호 : <span style="letter-spacing:0px;">010-7403-8288</span></li>
-            </ul>
-        </div>
-    </div> <!-- 상세모집요강 내용 끝--><br>
-</div>
+    .monform_a1 img {
+        border: none;
+    }
+</style> <!-- 상세모집요강 내용 시작-->
+<div class="monform_a1">
+    <p class="logo"><img src="https://img.albamon.kr/etc/monform_v3/common/bi_albamon.png" alt="알바몬"></p>
+    <div class="topimg"><img src="https://contents.albamon.kr/monimg/corp/detail/temp_type_visual_29_1.png"
+            style="width:100%"> </div>
+    <h1 style="text-align:center;">[진천롯데] 야간택배 최대 21만이상가능/<br>상, 하차/당일지급 알바 및 직원</h1> <!--기업소개--> <!-- 모집부문-->
+    <h2><span style="background:#54679B; color:#fff; padding:7px 30px;">모집부문</span></h2>
+    <div style="border:3px solid #54679B; margin-bottom:20px; margin-top:-20px; padding:35px 20px 25px;">
+        <table>
+            <thead>
+                <tr>
+                    <th style="background:#54679B; color:#fff;">모집부문</th>
+                    <th class="end">담당업무 및 자격요건</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>단순 상/하차 업무</strong></td>
+                    <td class="end right" style="text-align:left; padding-left:10px;">성별무관(미성년자 불가)<br> - 신입/경력에
+                        상관없이 모집합니다</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!-- 지원자격-->
+    <h2><span style="background:#54679B; color:#fff; padding:7px 30px;">근무조건 </span></h2>
+    <div style="border:3px solid #54679B; margin-bottom:20px; margin-top:-20px; padding:35px 20px 25px;">
+        <p class="topimg"><img
+                src="https://file.albamon.com/albamon/admin/GuinHtmlUpload/ImageView?fn=2024/04/img/jcyfrz02104435.jpg">
+        </p>
+    </div> <!-- 지원자격-->
+    <h2><span style="background:#54679B; color:#fff; padding:7px 30px;">지원조건</span></h2>
+    <div style="border:3px solid #54679B; margin-bottom:20px; margin-top:-20px; padding:35px 20px 25px;">
+        <ul>
+            <li>신분증(주민등록증 또는 면허증) 꼭 지참</li>
+            <li>반바지, 레깅스, 슬리퍼, 크록스 착용금지 </li>
+            <li>건강상 문제 없는 분(혈압 150이상, 맥박 110이상, 당뇨 등) </li>
+            <li>위 사항에 결격사유로 인해 현장에서 귀가조치 될 경우 자비로 귀가 조치. <br>꼭 준수 바랍니다</li>
+        </ul>
+    </div> <!--접수기간 및 방법-->
+    <h2><span style="background:#54679B; color:#fff; padding:7px 30px;">접수방법</span></h2>
+    <div style="border:3px solid #54679B; margin-bottom:20px; margin-top:-20px; padding:35px 20px 25px;">
+        <ul>
+            <li>온라인지원, 간편문자지원, 전화연락</li>
+            <li> <span style="color:blue; font-weight:600; letter-spacing:0px;">담당자 / <span
+                        style="letter-spacing:0px;">010-7403-8288</span></span></li>
+            <li> 전화 / 문자지원</li>
+            <li> 문자 지원시<br> [성함/나이/거주지/동종업계 경험 유, 무] </li>
+            <li> "전화 문의 시 '알바몬에서 채용정보 보고 전화 드렸습니다.' 라고 하시면 <br><span style="color:#fff">"</span>빠른 문의가 가능합니다."</li>
+        </ul>
+    </div> <!--면접 및 교육일정-->
+    <h2><span style="background:#54679B; color:#fff; padding:7px 30px;">담당자 정보</span></h2>
+    <div style="border:3px solid #54679B; margin-bottom:20px; margin-top:-20px; padding:35px 20px 25px;">
+        <ul>
+            <li>담당자명 : 김태진</li>
+            <li> 전화번호 : <span style="letter-spacing:0px;">010-7403-8288</span></li>
+        </ul>
+    </div>
+</div> <!-- 상세모집요강 내용 끝--><br>
